@@ -1,7 +1,5 @@
 # API Fullstack
-
 ---
-
 # **✨Desenvolvimento Fullstack (API)✨**
 
 **Olá! Bem-vindo ao meu projeto!**
