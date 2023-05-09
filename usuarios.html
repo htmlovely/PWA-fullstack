@@ -4,26 +4,43 @@
 
 <head>
 	<title>Listagem de Usuários</title>
+	<link rel="stylesheet" type="text/css" href="style2.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="manifest" href="manifest.json" />
+
+	<script>navigator.serviceWorker.register("service-worker.js")</script>
 </head>
 
 <body>
+	<main>
+
 	<h1>Listagem de Usuários</h1>
-	<table>
+<div class="box">
+	<table class="tabela">
 		<thead>
 			<tr>
-				<th>ID</th>
-				<th>Login</th>
-				<th>Email</th>
-				<th>Senha</th>
-				<th>Açoes</th>
-				<th> <a href="index.html"> <strong>Voltar</strong> </a>
-				</th>
-				<button type="button" onclick="atualizarUsuario()">Atualizar</button>
-
+				<th class="h2">ID</th>
+				<th class="h1">Login</th>
+				<th class="h2">Email</th>
+				<th class="h1">Senha</th>
+				<th class="h3">Açoes</th>
 			</tr>
 		</thead>
 		<tbody id="usuarios-table-body"></tbody>
 	</table>
+	<a  href="index.html">
+	<button>Voltar</button>
+</a>
+	<button type="button" onclick="atualizarUsuario()">Atualizar Cadastros</button>
+	
+</div>
+</main>
+
+
+
+
+
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 	<!--Api's-->

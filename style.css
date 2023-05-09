@@ -40,8 +40,6 @@
     display: block;
   }
 
-  
-
   .items{
     display: flex;
     justify-content: space-between;

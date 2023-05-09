@@ -58,10 +58,9 @@ route.get("/usuarios", (req, res) => {
 
 route.delete("/usuarios/:id", (req, res) => {
     const id = req.params.id;
-
     Usuario.destroy({
         where: {
-            id: id
+            id:id
         }
     }).then(() => {
         res.send(`Usuário com ID ${id} excluído com sucesso.`);
