@@ -13,43 +13,43 @@
     "screenshots": [0],
     "icons": [
       {
-        "src": "assets/img/assets/img/icon-cookie-resize1.png",
+        "src": "../AppIcons/iconestamanhos/128.png",
         "sizes": "128x128",
         "type": "image/png"
       },
       {
-        "src": "assets/img/assets/img/icon-cookie-resize2.png",
+        "src": "../AppIcons/iconestamanhos/144.png",
         "sizes": "144x144",
         "type": "image/png"
       },
       {
-        "src": "assets/img/assets/img/icon-cookie-resize3.png",
+        "src": "../AppIcons/iconestamanhos/152.png",
         "sizes": "152x152",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "assets/img/assets/img/icon-cookie-resize2.png",
+        "src": "../AppIcons/iconestamanhos/167.png",
         "sizes": "167x167",
         "type": "image/png"
       },
       {
-        "src": "assets/img/icon-cookie-resize1.png",
+        "src": "../AppIcons/iconestamanhos/180.png",
         "sizes": "180x180",
-        "type": "assets/img/AppIcons/Assets.xcassets/AppIcon.appiconset/180.png"
+        "type": "image/png"
       },
       {
-        "src": "assets/img/icon-cookie-resize4.png",
+        "src": "../AppIcons/iconestamanhos/192.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "assets/img/assets/img/icon-cookie-resize.png",
+        "src": "../AppIcons/iconestamanhos/256.png",
         "sizes": "256x256",
         "type": "image/png"
       },
       {
-        "src": "assets/img/assets/img/icon-cookie-resize4.png",
+        "src": "../AppIcons/iconestamanhos/512.png",
         "sizes": "512x512",
         "type": "image/png"
       }
@@ -57,5 +57,5 @@
     ],
     "shortcuts": [0],
     "lang": "pt",
-    "prefer_related_applications": true
+    "prefer_related_applications": false
   }

@@ -1,3 +1,12 @@
+  
+  body {
+    overflow-x: hidden;
+  }
+
+  body{
+    background-color: #066a75;
+  }
+  
 /* CSS reset */
 *, *:before, *:after { 
     margin:0;
@@ -17,10 +26,11 @@
 
   /*Criando a class content*/
   .content{
-    width: 500px;
+    width: 100%;
     min-height: 560px;    
     margin: 0px auto;
     position: relative;   
+    display: block;
   }
 
   /* Lighthouse indicação*/
@@ -29,6 +39,8 @@
     max-width: 100%;
     display: block;
   }
+
+  
 
   .items{
     display: flex;
@@ -131,8 +143,9 @@
     color: #7f7c7c;
     left: 0px;
     height: 20px;
-    width: 440px;
-    padding: 17px 30px 20px 30px;
+    width: 50%;
+    max-width: 600px;
+    padding: 6% 6% 60px 6%;
     font-size: 16px;
     text-align: right;
     border-top: 1px solid #dbe5e8;
@@ -143,11 +156,11 @@
    
   .link a {
     font-weight: bold;
-    background: #f7f8f1;
+    background: #f1f8f6;
     padding: 6px;
-    color: rgb(29, 162, 193);
+    color: #066a75;
     margin-left: 10px;
-    border: 1px solid #cbd518;
+    border: 1px solid #066a75;
    
     -webkit-border-radius: 4px;
     border-radius: 4px;  
@@ -163,26 +176,36 @@
   }
 
   #cadastro, 
-#login{
-  position: absolute;
-  top: 70px;
-  width: 88%;   
-  padding: 18px 6% 60px 6%;
-  margin: 0 0 35px 0;
-  background: #f7f7f7;
-  border: 1px solid rgba(147, 184, 189,0.8);
+  #login{
+    position: absolute;
+    width: 70%;   
+    max-width: 600px;
+    padding: 6% 6% 60px 6%;
+    margin: 10%;
+    background: #f7f7f7;
+    border: 1px solid rgba(147, 184, 189,0.8);
+     
+    box-shadow: 5px;
+    border-radius: 5px;
+     
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
    
-  box-shadow: 5px;
-  border-radius: 5px;
-   
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  }
  
-  animation-duration: 0.5s;
-  animation-timing-function: ease;
-  animation-fill-mode: both;
-}
+  p.link{
+    width: 88%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+ /* p.link a{
+    justify-content: flex-end;
+  }*/
 
 /* Efeito ao clicar no botão ( Ir para Login ) */
 #paracadastro:target ~ .content #cadastro,
