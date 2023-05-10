@@ -1,6 +1,4 @@
-    
-    
-    /*axios.get('http://localhost:5000/usuarios')
+/*axios.get('http://localhost:5000/usuarios')
     .then(function (response) {
         var usuarios = response.data;
         var usuariosTableBody = document.getElementById('usuarios-table-body');
@@ -58,9 +56,11 @@ axios.get('http://localhost:5000/usuarios')
         var acaoTd = document.createElement('td');
         var excluirButton = document.createElement('button');
         excluirButton.textContent = 'Excluir';
-        excluirButton.addEventListener('click', function () {
-            excluirUsuario(usuario.id);
-        });
+        excluirButton.addEventListener('click', (function(usuario) {
+            return function() {
+                excluirUsuario(usuario.id);
+            }
+        })(usuario));
         acaoTd.appendChild(excluirButton);
         tr.appendChild(acaoTd);
         usuariosTableBody.appendChild(tr);
@@ -69,7 +69,6 @@ axios.get('http://localhost:5000/usuarios')
 .catch(function (error) {
     console.log(error);
 });
-
     
 /*
 function excluirUsuario(id) {
