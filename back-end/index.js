@@ -18,7 +18,6 @@ database
     })
 
 
-
 route.get("/", (req, res) => {
     res.send("Inicial")
 })
